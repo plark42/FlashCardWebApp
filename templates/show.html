@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{className}}</title>
+</head>
+<script>
+    function show(){
+      document.getElementById("name").hidden = false;
+    }
+</script>
+
+<body>
+    <navbar>
+        <a href="/show/HWTR_100">HWTR 100</a>
+        <a href="/show/CS_190">CS 190</a>
+        <a href="/show/CS_250">CS 250</a>
+        <a href="/show/CS_435">CS 435</a>
+    </navbar>
+    <br>
+    <h1>{{className}}</h1>
+    <img src="/static/imgs/{{className}}/{{img}}" height="200" width="200"><br>
+    <!--<button onclick="show()">SHOW</button>-->
+    <a href="/show/{{className}}">NEXT</a>
+    <!--<h1 id="name" hidden>{{name}}</h1>-->
+    <h1 id="name">{{name}}</h1>
+</body>
+</html>
